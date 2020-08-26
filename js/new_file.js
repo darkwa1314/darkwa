@@ -1,0 +1,107 @@
+$(document).ready(function(){
+$(".sty").mouseover(function(){
+	$(this).animate({
+		color:'#55ffff',
+	})
+})
+$(".sty").mouseout(function(){
+	$(this).animate({
+		color:'#ffffff',
+	})
+})
+$("#f1").mouseenter(function(){
+	$("#ee1").animate({
+		top:"-0px",
+	})
+	$(this).animate({
+		backgroundColor: '#ff0000',
+	})
+	$("#ff1").animate({
+		left:'-0px'
+	})
+	$(".btn[id!='f1']").animate({
+		backgroundColor: '#000000',
+	})
+$("#f2").mouseenter(function(){
+		$("#ee1").animate({
+			top:'-600px'
+		})
+		$(this).animate({
+			backgroundColor: '#ff0000',
+		})
+		$("#ff1").animate({
+			left:'-250px'
+		})
+		$(".btn[id!='f2']").animate({
+			backgroundColor: '#000000',
+		})
+	})
+$("#f3").mouseenter(function(){
+	$("#ee1").animate({
+		top:'-1240px',
+		
+		})
+		$(this).animate({
+			backgroundColor: '#ff0000',
+			})
+			$("#ff1").animate({
+				left:'-500px'
+			})
+			$(".btn[id!='f3']").animate({
+				backgroundColor: '#000000',
+			})
+			})
+			})
+$("#g6").click(function(){
+	$("#g4").animate({
+		left:'-=700px',
+	})
+	var ddd=parseInt($("#g4").css("left"));
+	if(ddd==-1400){
+		$("#g4").animate({
+			left:'0px',
+		})
+	}
+})
+$("#g7").click(function(){
+	$("#g4").animate({
+		left:'+=700px',
+		})
+	var ddd=parseInt($("#g4").css("left"));
+	if(ddd+=700){
+		$("#g4").animate({
+			left:'0px'
+		})
+	}
+	})
+$("#j1").mouseover(function(){
+	$("#j11").css({"display":"inline-block"})
+})
+$("#j1").mouseout(function(){
+	$("#j11").css({"display":"none"})
+})
+$("#j2").mouseover(function(){
+	$("#j12").css({"display":"inline-block"})
+})
+$("#j2").mouseout(function(){
+	$("#j12").css({"display":"none"})
+})
+$("#j3").mouseover(function(){
+	$("#j13").css({"display":"inline-block"})
+})
+$("#j3").mouseout(function(){
+	$("#j13").css({"display":"none"})
+})
+$("#j4").mouseover(function(){
+	$("#j14").css({"display":"inline-block"})
+})
+$("#j4").mouseout(function(){
+	$("#j14").css({"display":"none"})
+})
+$("#j5").mouseover(function(){
+	$("#j15").css({"display":"inline-block"})
+})
+$("#j5").mouseout(function(){
+	$("#j15").css({"display":"none"})
+})
+})
